@@ -1,0 +1,19 @@
+{
+  "name": "tsdemo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev:tsc": "tsc -w",
+    "dev:exec": "nodemon --watch dist js --exec node dist/index.js",
+    "start": "concurrently npm:dev:*",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "concurrently": "^7.1.0",
+    "nodemon": "^2.0.15"
+  }
+}
