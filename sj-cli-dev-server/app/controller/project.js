@@ -1,12 +1,15 @@
-"use strict";
+'use strict';
 
-const Controller = require("egg").Controller;
-const mongo = require("../utils/mongo");
+const Controller = require('egg').Controller;
+
 class ProjectController extends Controller {
   async index() {
     const { ctx } = this;
-    const data = await mongo().query("template");
-    ctx.body = data;
+    ctx.body = 'hi, ';
+  }
+  getTemplate() {
+    const { ctx } = this;
+    ctx.body = 'template下载';
   }
 }
 
