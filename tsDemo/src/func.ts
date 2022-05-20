@@ -9,10 +9,11 @@ function buildName3(firstName:string,lastName?:string):string{
 }
 
 
-buildName1('a','b')
+buildName1(1,'b')
 buildName2('a')
 buildName3('a')
 
+let a :string = 1;
 
 
 interface Card {

@@ -1,7 +1,7 @@
 let num: number = 0b101;
 let str: String = String(12);
 let bol: boolean = !1;
-let sym:symbol = Symbol('a');
+// let sym:Symbol = Symbol('a');
 let nullName: null = null;
 let undefinedName: undefined = undefined;
 let voidName:void = undefined; //void类型只能复制undefined  不能赋值null
@@ -18,4 +18,3 @@ enum Status {
 let a :Status = Status.OK
 
 export {}
-

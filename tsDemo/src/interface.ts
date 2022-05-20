@@ -1,9 +1,9 @@
+// 数据结构的描述
 interface user{
   readonly name:string,
-  age?:number,
-  [propName:string]:any
-  [index:number]:any
-
+  age?:number, //可选
+  [propName:string]:any //属性key值声明,为string
+  [index:number]:any//属性key值声明,为number
 }
 
 let u1:user = {
