@@ -1,4 +1,11 @@
 
+function identity<Type>(arg:Type):Type{
+  return arg;
+}
+
+let myIdentity:<Input>(argue:Input) => void = identity;
+let myIdentity2:{<Type>(arg:Type):Type} = identity;
+
 
 
 class Animal{
@@ -48,6 +55,6 @@ function createInstance<T extends Object>(C: constructorType<T>): T {
 
 createInstance(Animal);
 
-export {}
+
 
 export {}

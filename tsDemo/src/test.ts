@@ -1,8 +1,10 @@
-interface a {
-  name?:string;
-  [propName:string]:string | number
+interface IWithLength {
+  length: number;
 }
-// todo
-let obj:a = {
-  namea:1
+
+function echoWithLength<T extends IWithLength>(arg:T):T{
+  arg.length = 1;
+  return arg;
 }
+
+let tt1 = echoWithLength([1,2,3]);

@@ -1,0 +1,1 @@
+declare var sunj:(str:string) => any;

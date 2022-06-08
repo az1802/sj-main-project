@@ -7,12 +7,12 @@ let str2 = <string>all;
 str2.charAt(1)
 
 class User{
-
   say(){
-
   }
 }
 
+
+// 自定义构造类型推断函数
 function isUser(data:any):data is User{
   if(data instanceof User){
     return true
